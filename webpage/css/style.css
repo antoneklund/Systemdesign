@@ -1,0 +1,55 @@
+body{
+    font-family: arial, sans-serif;
+    font-size: 1.2em;
+    margin: 40px;
+    padding-left: 16%;
+    padding-right: 16%;
+    border-bottom: 1px solid black;
+
+}
+
+.head{
+    height: 300px;
+    overflow:hidden;
+}
+
+#headline{
+    padding-left: 2%;
+    margin-top: -800px;
+    font-size: 5em;
+    color: orange;
+    font-weigth: bold;
+    position: absolute;
+}
+
+#frontpage{
+    opacity: 0.2;
+}
+
+table{
+    width: 100%;
+}
+
+.ingredients{
+    font-weight: bold;
+}
+
+
+.burgers{
+    color: black;
+    background-color: white;
+    border: 2px dashed black;
+    padding: 2%;
+}
+
+.drinks{
+    color: white;
+    background-color: black;
+    border: 2px dashed white;
+    padding: 2%;
+}
+
+button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
