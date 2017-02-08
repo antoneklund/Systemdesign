@@ -4,6 +4,7 @@
     <title>Max Burgare</title>
     <meta charset="utf-8"/>
     <script src="js/script.js"></script>
+    <script src="data/menu.js"></script>
     <script> docLoaded(indexPageLoaded); </script>
   </head>
   <body>
@@ -11,7 +12,7 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <section class="head">
         <img src="pics/restaurang.jpg" alt="frontpage" title="frontpage" id="frontpage">
-        <h1 id="headline"> Välkommen till MAX</h1>
+        <h1 id="headline">MAX</h1>
       </section>
       <section class="burgers">
         <div id="food">
@@ -21,80 +22,17 @@
               <tr id="name"></tr>
             </thead>
             <tbody id="bBody">
-              <tr id="image"></tr>
+              <tr id="images"></tr>
               <tr id="info"></tr>
+              <form>
+                <tr id="boxes"></tr>
+              </form>
             </tbody>       
                 
           </table>
         </div>
       </section>
       <br />
-          <!--<table>
-            <thead>
-              <tr align="left">
-                <th>Originalburgare </th>
-                <th>Cheese'n'bacon </th>
-                <th>Hallouimburgare </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img src="pics/Burgers-Max-Original.jpg" alt="Originalburgare" title="Originalburgare" width="250" ></td>
-                <td><img src="pics/Burgers-GDL-Cheese-n-bacon.jpg" alt="Cheese'n'bacon" title="Cheese'n'bacon" width="250" ></td>
-                <td><img src="pics/Burgers-GDL-BBQ-Halloumi-2017.jpg" alt="Halloumiburgare" title="Halloumiburgare" width="250" ></td>
-              </tr>
-              <br />
-              <tr>
-                <td>
-                  <dl>
-                    <dt>Innehåll</dt>
-                    <dd>
-                      <ul>
-                        <section class="ingredients">
-                          <li>Gluten </li>
-                          <li>Laktos </li>
-                          <li>1337 kcal </li>
-                        </section>
-
-                      </ul>
-                    </dd>
-                  </dl>
-                </td>
-                <td>
-                  <dl>
-                    <dt>Innehåll</dt>
-                    <dd>
-                      <ul>
-                        <section class="ingredients">
-                          <li>Gluten </li>
-                          <li>Laktos </li>
-                          <li>Bacon </li>
-                          <li>2000 kcal </li>
-                        </section>
-                      </ul>
-                    </dd>
-                  </dl>
-                </td>
-                <td>
-                  <dl>
-                    <dt>Innehåll</dt>
-                    <dd>
-                      <ul>
-                        <section class="ingredients">
-                          <li>Vegetarisk </li>
-                          <li>Gluten </li>
-                          <li>Laktos </li>
-                          <li>50 kcal </li>
-                        </section>
-                      </ul>
-                    </dd>
-                  </dl>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <br />
-      </section> -->
       <section class="drinks">
         <h2>Välj dryck </h2>
         <table>
@@ -109,6 +47,7 @@
             <tr>
               <td>
                 <img src="pics/Drinks-Coca-Cola.jpg" alt="Coca Cola" title="Coca Cola" width="250" >
+                <form>
                 <p>
                   <label for="val">Dryckesval</label>
                   <select id="val" name="v">
@@ -118,6 +57,7 @@
                   </select>
                   
                 </p>
+                </form>
                 <br />
               </td>
               <td><img src="pics/Drinks-Seattles-Coffee2.jpg" alt="Kaffe" title="Kaffe" width="250" >
@@ -170,7 +110,7 @@
           </tbody>
         </table>
       </section>
-      <button type="submit" align="right" ><img src="pics/Order-now-button.jpg" width="80"> </button>
+      <button id="order" onclick="gatherOrders()" type="submit" align="right" ><img src="pics/Order-now-button.jpg" width="80"> </button>
     </main>
   </body>
   <footer> 2017 Max Burgers </footer>
