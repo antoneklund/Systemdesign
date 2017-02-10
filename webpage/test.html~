@@ -1,0 +1,14 @@
+<html lang="en">
+  <head>
+  <title>Max burgers</title>
+  <script src="js/script.js"></script> 
+  </head>
+  <body>
+    <main>
+      <div id="test">
+        <h2>Välj en burgare</h2>
+        
+      </div>
+    </main>
+  </body>
+</html>

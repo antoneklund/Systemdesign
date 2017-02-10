@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Max Burgare</title>
+    <meta charset="utf-8"/>
+    <script src="https.//unpkg.com/vue/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+    <script src="data/menu.js"></script>
+    <script> docLoaded(indexPageLoaded); </script>
+  </head>
+  <body>
+    <main>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <section class="head">
+        <img src="pics/restaurang.jpg" alt="frontpage" title="frontpage" id="frontpage">
+        <h1 id="headline">MAX</h1>
+      </section>
+      <section class="burgers">
+        <div id="food">
+          <h2>Välj Hamburgare</h2>
+          <table id="bTable">
+            <thead id="bHead">
+              <tr id="name"></tr>
+            </thead>
+            <tbody id="bBody">
+              <tr id="images"></tr>
+              <tr id="info"></tr>
+              <form>
+                <tr id="boxes"></tr>
+              </form>
+            </tbody>       
+                
+          </table>
+        </div>
+      </section>
+      <br />
+      <section class="drinks">
+        <h2>Välj dryck </h2>
+        <table>
+          <thead>
+            <tr align="left">
+              <th>Läsk </th>
+              <th>Kaffe </th>
+              <th>Mocha Latte </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="pics/Drinks-Coca-Cola.jpg" alt="Coca Cola" title="Coca Cola" width="250" >
+                <form>
+                <p>
+                  <label for="val">Dryckesval</label>
+                  <select id="val" name="v">
+                    <option checked="checked">Coca-Cola</option>
+                    <option>Fanta</option>
+                    <option>Sprite</option>
+                  </select>
+                  
+                </p>
+                </form>
+                <br />
+              </td>
+              <td><img src="pics/Drinks-Seattles-Coffee2.jpg" alt="Kaffe" title="Kaffe" width="250" >
+                <form>
+                  <input type="radio" name="option" value="black" checked="checked">Svart
+                  <input type="radio" name="option" value="milk">Med mjölk
+                </form>
+                <br />
+              </td>
+              <td><img src="pics/Drinks-Seattles-Coffee-Iced-Mocha-Latte.jpg" alt="Mocha Latte" title="Mocha" width="250" ></td>
+              <br />
+            </tr>
+            <tr>
+              <td>
+                <dl>
+                  <dt>Innehåll</dt>
+                  <dd>
+                    <ul>
+                      <li>Socker </li>
+                      <li>666 kcal </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </td>
+              <td>
+                <dl>
+                  <dt>Innehåll</dt>
+                  <dd>
+                    <ul>
+                      <li>Vatten </li>
+                      <li>Koffein </li>
+                      <li>15 kcal </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </td>
+              <td>
+                <dl>
+                  <dt>Innehåll</dt>
+                  <dd>
+                    <ul>
+                      <li>Koffein </li>
+                      <li>Laktos </li>
+                      <li>9000 kcal </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <button id="order" onclick="gatherOrders()" type="submit" align="right" ><img src="pics/Order-now-button.jpg" width="80"> </button>
+    </main>
+  </body>
+  <footer> 2017 Max Burgers </footer>
+</html>
